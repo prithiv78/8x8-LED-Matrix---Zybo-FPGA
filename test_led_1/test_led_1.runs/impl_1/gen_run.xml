@@ -1,93 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1795171278">
-  <File Type="ROUTE-PWR" Name="test_2_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="test_2.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="test_2_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="test_2_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="test_2_rqa_opted.pb"/>
-  <File Type="BITSTR-MMI" Name="test_2.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="test_2_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="test_2_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="test_2_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="test_2_opt.dcp"/>
-  <File Type="OPT-DRC" Name="test_2_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="test_2.hwdef"/>
-  <File Type="PWROPT-DCP" Name="test_2_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="test_2_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="test_2_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="test_2_placed.dcp"/>
-  <File Type="PLACE-IO" Name="test_2_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="test_2_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="test_2_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="test_2_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="test_2_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="test_2_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="test_2_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="test_2.bin"/>
-  <File Type="PLACE-TIMING" Name="test_2_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="test_2_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="test_2_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="test_2_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="test_2.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="test_2_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="test_2_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="test_2_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="test_2.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="test_2_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="test_2_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="test_2_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="test_2_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="test_2_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="test_2_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="test_2_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="test_2_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="test_2_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="test_2_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="test_2_rqs_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="test_2_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="test_2_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="test_2_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="test_2_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="test_2_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="test_2_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="test_2_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="test_2_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="test_2_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="test_2_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="test_2_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="test_2_postroute_physopt_bb.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1795173930">
+  <File Type="ROUTE-PWR" Name="test_3_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="test_3.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="test_3_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="test_3_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="test_3_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="test_3.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="test_3_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="test_3_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="test_3_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="test_3_opt.dcp"/>
+  <File Type="OPT-DRC" Name="test_3_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="test_3.hwdef"/>
+  <File Type="PWROPT-DCP" Name="test_3_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="test_3_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="test_3_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="test_3_placed.dcp"/>
+  <File Type="PLACE-IO" Name="test_3_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="test_3_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="test_3_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="test_3_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="test_3_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="test_3_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="test_3_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="test_3.bin"/>
+  <File Type="PLACE-TIMING" Name="test_3_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="test_3_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="test_3_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="test_3_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="test_3.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="test_3_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="test_3_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="test_3_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="test_3.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="test_3_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="test_3_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="test_3_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="test_3_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="test_3_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="test_3_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="test_3_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="test_3_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="test_3_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="test_3_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="test_3_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="test_3_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="test_3_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="test_3_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="test_3_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="test_3_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="test_3_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="test_3_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="test_3_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="test_3_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="test_3_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="test_3_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="test_3_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="test_one_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="test_one_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="test_one_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="test_one_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="test_2.bit"/>
+  <File Type="BG-BIT" Name="test_3.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="test_one_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="test_one_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="test_2.nky"/>
-  <File Type="BITSTR-BMM" Name="test_2_bd.bmm"/>
-  <File Type="PDI-FILE" Name="test_2.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="test_2_soc.pdi"/>
-  <File Type="PL-PDI-FILE" Name="test_2_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="test_2.rcfi"/>
-  <File Type="CFI_FILE" Name="test_2.cfi"/>
-  <File Type="RNPI_FILE" Name="test_2.rnpi"/>
-  <File Type="NPI_FILE" Name="test_2.npi"/>
-  <File Type="RBD_FILE" Name="test_2.rbd"/>
+  <File Type="BITSTR-NKY" Name="test_3.nky"/>
+  <File Type="BITSTR-BMM" Name="test_3_bd.bmm"/>
+  <File Type="PDI-FILE" Name="test_3.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="test_3_soc.pdi"/>
+  <File Type="PL-PDI-FILE" Name="test_3_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="test_3.rcfi"/>
+  <File Type="CFI_FILE" Name="test_3.cfi"/>
+  <File Type="RNPI_FILE" Name="test_3.rnpi"/>
+  <File Type="NPI_FILE" Name="test_3.npi"/>
+  <File Type="RBD_FILE" Name="test_3.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="test_2.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="test_2.sysdef"/>
-  <File Type="BG-BGN" Name="test_2.bgn"/>
-  <File Type="BG-DRC" Name="test_2.drc"/>
-  <File Type="RDI-RDI" Name="test_2.vdi"/>
+  <File Type="BITSTR-LTX" Name="test_3.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="test_3.sysdef"/>
+  <File Type="BG-BGN" Name="test_3.bgn"/>
+  <File Type="BG-DRC" Name="test_3.drc"/>
+  <File Type="RDI-RDI" Name="test_3.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="test_2_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="test_2_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="test_3_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="test_3_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/test_3.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/test_2.v">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -103,7 +111,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="test_2"/>
+      <Option Name="TopModule" Val="test_3"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
