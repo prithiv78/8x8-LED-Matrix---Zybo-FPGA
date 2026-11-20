@@ -1,4 +1,6 @@
 set_property SRC_FILE_INFO {cfile:{C:/Users/Prithiv/Desktop/Prithiv/prithiv_studies/Sem3/Courses/EE2070 Digital Systems/project/test_led_1/test_led_1.srcs/constrs_1/new/constraint.xdc} rfile:../../../test_led_1.srcs/constrs_1/new/constraint.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN L16 [get_ports clk]
 set_property src_info {type:XDC file:1 line:20 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN G15 [get_ports {rst}]
 set_property src_info {type:XDC file:1 line:82 export:INPUT save:INPUT read:READ} [current_design]
