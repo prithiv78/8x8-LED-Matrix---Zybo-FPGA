@@ -198,10 +198,10 @@ module test_4(
     delay_clk u_dclk (
         .clk(clk),
         .rst(rst),
-        .deylayed_clk(delayed_clk)
+        .delayed_clk(delayed_clk)
     );
 
-    led_out(
+    led_out u_led_out(
         .delayed_clk(delayed_clk),
         .scan_clk(scan_clk),
         .rst(rst),
@@ -210,23 +210,24 @@ module test_4(
     );
     
     // Top edge (Pins 16 down to 9)
-    assign a1 = c[7]; // Pin 16 -> Col 8
-    assign a2 = c[6]; // Pin 15 -> Col 7
+    assign a1 = c[0]; // Pin 16 -> Col 1
+    assign a2 = c[1]; // Pin 15 -> Col 2
     assign a3 = r[1]; // Pin 14 -> Row 2
-    assign a4 = c[0]; // Pin 13 -> Col 1
+    assign a4 = c[7]; // Pin 13 -> Col 8
     assign a5 = r[3]; // Pin 12 -> Row 4
-    assign a6 = c[5]; // Pin 11 -> Col 6
-    assign a7 = c[3]; // Pin 10 -> Col 4
+    assign a6 = c[2]; // Pin 11 -> Col 3
+    assign a7 = c[4]; // Pin 10 -> Col 5
     assign a8 = r[0]; // Pin 9  -> Row 1
 
     // Bottom edge (Pins 1 to 8)
     assign b1 = r[4]; // Pin 1  -> Row 5
     assign b2 = r[6]; // Pin 2  -> Row 7
-    assign b3 = c[1]; // Pin 3  -> Col 2
-    assign b4 = c[2]; // Pin 4  -> Col 3
+    assign b3 = c[6]; // Pin 3  -> Col 7
+    assign b4 = c[5]; // Pin 4  -> Col 6
     assign b5 = r[7]; // Pin 5  -> Row 8
-    assign b6 = c[4]; // Pin 6  -> Col 5
+    assign b6 = c[3]; // Pin 6  -> Col 4
     assign b7 = r[5]; // Pin 7  -> Row 6
     assign b8 = r[2]; // Pin 8  -> Row 3
 
 endmodule
+
