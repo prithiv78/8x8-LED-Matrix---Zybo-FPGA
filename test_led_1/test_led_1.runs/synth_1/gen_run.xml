@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1795173930" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/test_one.dcp">
-  <File Type="PA-TCL" Name="test_3.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="test_3_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="test_3_reports.tcl"/>
-  <File Type="RDS-RDS" Name="test_3.vds"/>
-  <File Type="RDS-UTIL" Name="test_3_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="test_3_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="test_3.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="test_3_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="test_3_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1795423540" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/test_one.dcp">
+  <File Type="PA-TCL" Name="test_4.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="test_4_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="test_4_reports.tcl"/>
+  <File Type="RDS-RDS" Name="test_4.vds"/>
+  <File Type="RDS-UTIL" Name="test_4_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="test_4_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="test_4.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="test_4_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="test_4_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/test_4.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/test_3.v">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -36,7 +44,8 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="test_3"/>
+      <Option Name="TopModule" Val="test_4"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">

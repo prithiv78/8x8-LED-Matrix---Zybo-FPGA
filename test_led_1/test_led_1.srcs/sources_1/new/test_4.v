@@ -52,7 +52,7 @@ module delay_clk(
         if (rst) begin
             temp        <= 26'd0;
             delayed_clk <= 1'b0;
-        end else if (temp == 26'd62_499_999) begin // Half-second toggle = 1 Hz
+        end else if (temp == 26'd31_249_999) begin // Half-second toggle = 1/2 Hz
             temp        <= 26'd0;
             delayed_clk <= ~delayed_clk;
         end else begin
@@ -68,16 +68,16 @@ module led_out(
     output wire [7:0] row,
     output reg [7:0] column = 8'b0000_0000
 );
-    reg [3:0] idx = 4'b0000;
+    reg [3:0] idx = 5'b0000;
     reg [2:0] row_idx = 3'b000;
     
     always @(posedge delayed_clk or posedge rst) begin 
         if (rst) begin 
-            idx <= 4'b000;
-        end else if (idx < 4'b1011) begin 
+            idx <= 5'b000;
+        end else if (idx < 5'b10001) begin 
             idx <= idx + 1'b1;
         end else begin 
-            idx <= 4'b0000;
+            idx <= 5'b00000;
         end
     end
     
@@ -93,7 +93,7 @@ module led_out(
     always @(*) begin 
         case (idx)
         
-        4'b0000: begin //I          
+        5'b00000, 5'b00001: begin //I          
                 case (row_idx)
                     3'd0: column = 8'b1111_1111;
                     3'd1: column = 8'b1111_1111;
@@ -106,7 +106,7 @@ module led_out(
                     default: column = 8'b0000_0000;
                 endcase
         end
-        4'b0010: begin //I       
+        5'b00011, 5'b00100: begin //I       
                 case (row_idx)
                     3'd0: column = 8'b1111_1111;
                     3'd1: column = 8'b1111_1111;
@@ -120,7 +120,7 @@ module led_out(
                 endcase
         end
         
-        4'b0100: begin //T          
+        5'b00110, 5'b00111: begin //T          
                 case (row_idx)
                     3'd0: column = 8'b1111_1111;
                     3'd1: column = 8'b1111_1111;
@@ -134,7 +134,7 @@ module led_out(
                 endcase
         end
         
-        4'b0110: begin  //P         
+        5'b01001, 5'b01010: begin  //P         
                 case (row_idx)
                     3'd0: column = 8'b1111_1110;
                     3'd1: column = 8'b1111_1111;
@@ -148,7 +148,7 @@ module led_out(
                 endcase
         end
         
-        4'b1000: begin //K
+        5'b01100, 5'b01101: begin //K
                 case (row_idx)
                     3'd0: column = 8'b1100_0111;
                     3'd1: column = 8'b1100_1110;
@@ -162,7 +162,7 @@ module led_out(
                 endcase
         end
         
-        4'b1010: begin //D           
+        5'b01111, 5'b10000: begin //D           
                 case (row_idx)
                     3'd0: column = 8'b1111_1100;
                     3'd1: column = 8'b1111_1110;
