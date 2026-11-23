@@ -68,16 +68,16 @@ module led_out(
     output wire [7:0] row,
     output reg [7:0] column = 8'b0000_0000
 );
-    reg [2:0] idx = 3'b000;
+    reg [3:0] idx = 4'b0000;
     reg [2:0] row_idx = 3'b000;
     
     always @(posedge delayed_clk or posedge rst) begin 
         if (rst) begin 
-            idx <= 3'b000;
-        end else if (idx < 3'b101) begin 
+            idx <= 4'b000;
+        end else if (idx < 4'b1011) begin 
             idx <= idx + 1'b1;
         end else begin 
-            idx <= 3'b000;
+            idx <= 4'b0000;
         end
     end
     
@@ -93,7 +93,7 @@ module led_out(
     always @(*) begin 
         case (idx)
         
-        3'b000: begin //I          
+        4'b0000: begin //I          
                 case (row_idx)
                     3'd0: column = 8'b1111_1111;
                     3'd1: column = 8'b1111_1111;
@@ -106,7 +106,7 @@ module led_out(
                     default: column = 8'b0000_0000;
                 endcase
         end
-        3'b001: begin //I       
+        4'b0010: begin //I       
                 case (row_idx)
                     3'd0: column = 8'b1111_1111;
                     3'd1: column = 8'b1111_1111;
@@ -120,7 +120,7 @@ module led_out(
                 endcase
         end
         
-        3'b010: begin //T          
+        4'b0100: begin //T          
                 case (row_idx)
                     3'd0: column = 8'b1111_1111;
                     3'd1: column = 8'b1111_1111;
@@ -134,7 +134,7 @@ module led_out(
                 endcase
         end
         
-        3'b011: begin  //P         
+        4'b0110: begin  //P         
                 case (row_idx)
                     3'd0: column = 8'b1111_1110;
                     3'd1: column = 8'b1111_1111;
@@ -148,7 +148,7 @@ module led_out(
                 endcase
         end
         
-        3'b100: begin //K
+        4'b1000: begin //K
                 case (row_idx)
                     3'd0: column = 8'b1100_0111;
                     3'd1: column = 8'b1100_1110;
@@ -162,7 +162,7 @@ module led_out(
                 endcase
         end
         
-        3'b101: begin //D           
+        4'b1010: begin //D           
                 case (row_idx)
                     3'd0: column = 8'b1111_1100;
                     3'd1: column = 8'b1111_1110;
@@ -174,6 +174,20 @@ module led_out(
                     3'd7: column = 8'b1111_1100;
                     default: column = 8'b0000_0000;
                 endcase
+        end
+        
+        default: begin
+                case (row_idx)
+                    3'd0: column = 8'b0000_0000;
+                    3'd1: column = 8'b0000_0000;
+                    3'd2: column = 8'b0000_0000;
+                    3'd3: column = 8'b0000_0000;
+                    3'd4: column = 8'b0000_0000;
+                    3'd5: column = 8'b0000_0000;
+                    3'd6: column = 8'b0000_0000;
+                    3'd7: column = 8'b0000_0000;
+                    default: column = 8'b0000_0000;
+               endcase
         end
         endcase
     end
